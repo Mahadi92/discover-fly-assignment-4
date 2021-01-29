@@ -146,11 +146,26 @@ nav ul li a:hover, a.active{
     display: none;
 }
 .booking-classes{
-
+    background-color: rgba(192, 206, 247, 0.638);
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
 }
 .booking-classes h3{
     font-size: 25px;
 }
 .booking-classes p{
     font-size: 20px;
+}
+.booking-classes span{
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 22px;
+}
+.total-amount{
+    padding: 8px 20px;
+    background-color: rgba(194, 247, 211, 0.638);
+    border-radius: 0px 0px 10px 10px;
+}
+.total-amount span{
+    color: rgb(0, 108, 133);
 }
