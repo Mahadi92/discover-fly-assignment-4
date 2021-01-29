@@ -55,7 +55,8 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">First Class ($150)</label>
-                    <input id="first-class-quantity-input" class="inp-style inp-width" type="text" name="" value="1" disabled>
+                    <input id="first-class-quantity-input" class="inp-style inp-width" type="text" name="" value="1"
+                        disabled>
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handleClassChanges('first', true)" class="btn-quantity">
@@ -70,7 +71,8 @@
             <div class="input-group f-class">
                 <div>
                     <label for="">Economy Class ($100)</label>
-                    <input id="economy-class-quantity-input" class="inp-style inp-width" type="text" value="1" name="" disabled>
+                    <input id="economy-class-quantity-input" class="inp-style inp-width" type="text" value="1" name=""
+                        disabled>
                 </div>
                 <div class="plus-minus-btn">
                     <button onclick="handleClassChanges('economy', true)" class="btn-quantity">
@@ -119,6 +121,20 @@
                 voluptatibus quam</p>
         </div>
         </section>
+
+<section id="booked">
+    <div class="booking-classes">
+        <h3>Your booking</h3>
+        <p>First class: <span id="first-class-ticket-quantity">0</span> ticket</p>
+        <p>Economy class: <span id="economy-class-ticket-quantity">0</span> ticket</p>
+    </div>
+    <hr>
+    <div class="total-amount">
+        <h3>Your total amount $<span id="total-money">0</span></h3>
+    </div>
+</section>
+
+
 
         <script src="js/script.js"></script>
 

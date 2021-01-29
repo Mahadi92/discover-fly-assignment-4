@@ -37,14 +37,28 @@ function calculateTotal() {
     document.getElementById('total').innerText = total;
 
 }
-
+// Getting input value / Atomic Function 
 function getInputValue(quantity) {
     const quantityInput = document.getElementById(quantity + '-class-quantity-input');
     const quantityCount = parseInt(quantityInput.value);
     return quantityCount;
 }
 
-// document.getElementById('book-now').addEventListener('click')
+// Booked confirm function || Extra function
+document.getElementById('book-now').addEventListener('click', function () {
+    document.getElementById('booked').style.display = "block";
+
+    const firstClassQuantityCount = getInputValue('first');
+    const economyClassQuantityCount = getInputValue('economy');
+    const totalAmount = document.getElementById('total');
+    const total = parseInt(totalAmount.innerText);
+
+    document.getElementById('first-class-ticket-quantity').innerText = firstClassQuantityCount;
+    document.getElementById('economy-class-ticket-quantity').innerText = economyClassQuantityCount;
+    document.getElementById('total-money').innerText = total;
+
+
+})
 
 
 

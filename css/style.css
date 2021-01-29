@@ -134,3 +134,23 @@ nav ul li a:hover, a.active{
     display: flex;
     justify-content: space-between;
 }
+/* Extra section */
+#booked{
+    background: #fff;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    margin: 500px 450px;
+    box-shadow: 5px 5px 10px gray;
+    display: none;
+}
+.booking-classes{
+
+}
+.booking-classes h3{
+    font-size: 25px;
+}
+.booking-classes p{
+    font-size: 20px;
+}
