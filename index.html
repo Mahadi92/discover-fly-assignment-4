@@ -58,11 +58,11 @@
                     <input id="first-class-quantity-input" class="inp-style inp-width" type="text" name="" value="1" disabled>
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleClassChanges('first', true)">
-                        <i class="fas fa-plus-circle"></i>
+                    <button onclick="handleClassChanges('first', true)" class="btn-quantity">
+                        <i class="fas fa-plus-circle increase"></i>
                     </button>
-                    <button onclick="handleClassChanges('first', false)">
-                        <i class="fas fa-minus-circle"></i>
+                    <button onclick="handleClassChanges('first', false)" class="btn-quantity decrease">
+                        <i class="fas fa-minus-circle decrease"></i>
                     </button>
                 </div>
             </div>
@@ -73,11 +73,11 @@
                     <input id="economy-class-quantity-input" class="inp-style inp-width" type="text" value="1" name="" disabled>
                 </div>
                 <div class="plus-minus-btn">
-                    <button onclick="handleClassChanges('economy', true)">
-                        <i class="fas fa-plus-circle"></i>
+                    <button onclick="handleClassChanges('economy', true)" class="btn-quantity">
+                        <i class="fas fa-plus-circle increase"></i>
                     </button>
-                    <button onclick="handleClassChanges('economy', false)">
-                        <i class="fas fa-minus-circle"></i>
+                    <button onclick="handleClassChanges('economy', false)" class="btn-quantity">
+                        <i class="fas fa-minus-circle decrease"></i>
                     </button>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="book-now" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">

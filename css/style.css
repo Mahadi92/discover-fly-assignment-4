@@ -53,8 +53,10 @@ nav ul li a:hover, a.active{
 }
 .booking-form h3{
     margin: 10px 0px;
+    font-size: 25px;
+    color: #0B1933;
 }
-.booking-form  .input-group{
+.booking-form .input-group{
     margin: 10px 0;
 }
 .f-class{
@@ -104,6 +106,18 @@ nav ul li a:hover, a.active{
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
     margin-bottom: 25px;
+}
+.btn-quantity{
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.btn-quantity .increase{
+    color: #0a3d62;
+}
+.btn-quantity .decrease{
+    color: #3c6382;
 }
 
 .btn-style{

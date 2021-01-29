@@ -1,3 +1,5 @@
+// Quantity Increase Decrease function
+
 function handleClassChanges(classes, isIncrease) {
     const quantityInput = document.getElementById(classes + '-class-quantity-input');
     const quantityCount = parseInt(quantityInput.value);
@@ -20,12 +22,10 @@ function handleClassChanges(classes, isIncrease) {
     calculateTotal();
 }
 
+// Calculate Total function 
 function calculateTotal() {
-    const firstClassQuantityInput = document.getElementById('first-class-quantity-input');
-    const firstClassQuantityCount = parseInt(firstClassQuantityInput.value);
-
-    const economyClassQuantityInput = document.getElementById('economy-class-quantity-input');
-    const economyClassQuantityCount = parseInt(economyClassQuantityInput.value);
+    const firstClassQuantityCount = getInputValue('first');
+    const economyClassQuantityCount = getInputValue('economy');
 
     const subtotal = firstClassQuantityCount * 150 + economyClassQuantityCount * 100;
     document.getElementById('subtotal').innerText = subtotal;
@@ -37,6 +37,14 @@ function calculateTotal() {
     document.getElementById('total').innerText = total;
 
 }
+
+function getInputValue(quantity) {
+    const quantityInput = document.getElementById(quantity + '-class-quantity-input');
+    const quantityCount = parseInt(quantityInput.value);
+    return quantityCount;
+}
+
+// document.getElementById('book-now').addEventListener('click')
 
 
 
