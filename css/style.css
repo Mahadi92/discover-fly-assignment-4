@@ -139,9 +139,9 @@ nav ul li a:hover, a.active{
     background: #fff;
     height: auto;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     position: absolute;
-    margin: 500px 450px;
+    margin: 495px 450px;
     box-shadow: 5px 5px 10px gray;
     display: none;
 }
@@ -167,5 +167,6 @@ nav ul li a:hover, a.active{
     border-radius: 0px 0px 10px 10px;
 }
 .total-amount span{
-    color: rgb(0, 108, 133);
+    font-size: 20px;
+    color: #006c85;
 }
