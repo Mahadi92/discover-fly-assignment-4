@@ -43,7 +43,7 @@ function getInputValue(quantity) {
     return quantityCount;
 }
 
-// Booked confirm function || Extra function
+// Booking confirm function || Extra function
 document.getElementById('book-now').addEventListener('click', function () {
 
     const firstClassQuantityCount = getInputValue('first');
@@ -52,14 +52,14 @@ document.getElementById('book-now').addEventListener('click', function () {
     const total = parseInt(totalAmount.innerText);
 
 
-    if (total > 0) {
+    if (total > 0) { //validation
         document.getElementById('booked').style.display = "block";
         document.getElementById('first-class-ticket-quantity').innerText = firstClassQuantityCount;
         document.getElementById('economy-class-ticket-quantity').innerText = economyClassQuantityCount;
         document.getElementById('total-money').innerText = total;
 
     } else {
-        alert('You are not selected any Ticket')
+        alert('You do not select any ticket option');
     }
 
 

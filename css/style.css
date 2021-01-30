@@ -6,7 +6,7 @@
     list-style-type: none;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background:url("../images/bg.png");
     background-repeat: no-repeat;
     background-position: center center;
@@ -51,9 +51,13 @@ nav ul li a:hover, a.active{
     border-radius: 5px;
     float: left;
 }
+label{
+    font-size: 20px;
+    font-weight: 700;
+}
 .booking-form h3{
     margin: 10px 0px;
-    font-size: 25px;
+    font-size: 30px;
     color: #0B1933;
 }
 .booking-form .input-group{
@@ -78,7 +82,8 @@ nav ul li a:hover, a.active{
     margin: 10px 0;
 }
 .booking-form  .calculations p{
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 .booking-form input{
@@ -133,6 +138,13 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+    background: rgba(218, 245, 202, 0.679);
+    padding: 0px 10px;
+    border-radius: 5px;
+
+}
+.amount h4{
+    font-size: 22px;
 }
 /* Extra section */
 #booked{
@@ -141,7 +153,7 @@ nav ul li a:hover, a.active{
     padding: 20px;
     border-radius: 15px;
     position: absolute;
-    margin: 495px 450px;
+    margin: 550px 450px;
     box-shadow: 5px 5px 10px gray;
     display: none;
 }
