@@ -1,5 +1,4 @@
 // Quantity Increase Decrease function
-
 function handleClassChanges(classes, isIncrease) {
     const quantityInput = document.getElementById(classes + '-class-quantity-input');
     const quantityCount = parseInt(quantityInput.value);
@@ -37,7 +36,7 @@ function calculateTotal() {
     document.getElementById('total').innerText = total;
 
 }
-// Getting input value / Atomic Function 
+// Getting input value || Atomic Function 
 function getInputValue(quantity) {
     const quantityInput = document.getElementById(quantity + '-class-quantity-input');
     const quantityCount = parseInt(quantityInput.value);
@@ -46,16 +45,22 @@ function getInputValue(quantity) {
 
 // Booked confirm function || Extra function
 document.getElementById('book-now').addEventListener('click', function () {
-    document.getElementById('booked').style.display = "block";
 
     const firstClassQuantityCount = getInputValue('first');
     const economyClassQuantityCount = getInputValue('economy');
     const totalAmount = document.getElementById('total');
     const total = parseInt(totalAmount.innerText);
 
-    document.getElementById('first-class-ticket-quantity').innerText = firstClassQuantityCount;
-    document.getElementById('economy-class-ticket-quantity').innerText = economyClassQuantityCount;
-    document.getElementById('total-money').innerText = total;
+
+    if (total > 0) {
+        document.getElementById('booked').style.display = "block";
+        document.getElementById('first-class-ticket-quantity').innerText = firstClassQuantityCount;
+        document.getElementById('economy-class-ticket-quantity').innerText = economyClassQuantityCount;
+        document.getElementById('total-money').innerText = total;
+
+    } else {
+        alert('You are not selected any Ticket')
+    }
 
 
 })
